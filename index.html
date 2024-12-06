@@ -24,7 +24,7 @@
         }
         .download-button {
             display: inline-block;
-            margin: 0px 0px 30px 0px;
+            margin: 0px 0px 0px 0px;
             padding: 15px 30px;
             font-size: 1.5em;
             color: #ffffff;
@@ -45,6 +45,10 @@
             max-width: 800px;
             width: 90%;
             margin-bottom: 50px;
+        }
+        .step1 {
+            flex: 1 1 30px;
+            text-align: center;
         }
         .step {
             flex: 1 1 300px;
@@ -85,7 +89,10 @@
 </head>
 <body>
     <h1>Decktricks</h1>
-    <a href="https://github.com/MrAwesome/decktricks/releases/download/stable/decktricks-install.desktop" class="download-button">Download</a>
+    <div class="step1">
+        <a href="https://github.com/MrAwesome/decktricks/releases/download/stable/decktricks-install.desktop" class="download-button">Download</a>
+        <div class="step-label">Step 1</div>
+    </div>
     <div class="tutorial">
         <div class="step">
             <img src="step2.png" alt="Step 2">
