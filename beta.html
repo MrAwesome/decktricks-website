@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decktricks</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #181a1b;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #61dafb;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: #fff;
+            background-color: #61dafb;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #21a1f1;
+        }
+        .tutorial {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        .step {
+            flex: 1 1 300px;
+            margin: 20px;
+            max-width: 45%;
+        }
+        .step img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .step-label {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #61dafb;
+        }
+        .step-sublabel {
+            font-size: 1em;
+            color: #a0a0a0;
+        }
+        @media (max-width: 768px) {
+            .step {
+                max-width: 100%;
+            }
+        }
+        .additional-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        .additional-step {
+            flex: 1 1 300px;
+            margin: 20px;
+            max-width: 45%;
+        }
+        .additional-step img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .additional-step-label {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #61dafb;
+        }
+        .additional-step-sublabel {
+            font-size: 1em;
+            color: #a0a0a0;
+        }
+        .social-media {
+            margin: 50px 0;
+        }
+        .social-media a {
+            margin: 0 15px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        .social-media a:hover {
+            filter: grayscale(0%);
+        }
+        .social-media img {
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            border-top: 1px solid #444;
+            color: #a0a0a0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Decktricks</h1>
+        <a href="https://github.com/MrAwesome/decktricks/releases/download/stable/decktricks-install.desktop" class="download-button">Download</a>
+        
+        <div class="tutorial">
+            <div class="step">
+                <img src="step2.png" alt="Step 1">
+                <div class="step-label">Step 1</div>
+                <div class="step-sublabel">Go to Downloads folder</div>
+            </div>
+            <div class="step">
+                <img src="step3.png" alt="Step 2">
+                <div class="step-label">Step 2</div>
+                <div class="step-sublabel">Double-click the installer</div>
+            </div>
+        </div>
+        
+        <div class="additional-steps">
+            <div class="additional-step">
+                <img src="decktricks_game_mode.png" alt="Step 3">
+                <div class="additional-step-label">Step 3</div>
+                <div class="additional-step-sublabel">Launch Decktricks from Game Mode</div>
+            </div>
+            <div class="additional-step">
+                <img src="decktricks_sample.png" alt="Step 4">
+                <div class="additional-step-label">Step 4</div>
+                <div class="additional-step-sublabel">Enjoy!</div>
+            </div>
+        </div>
+        
+        <div class="social-media">
+            <a href="https://github.com/MrAwesome/decktricks" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" alt="GitHub logo">
+            </a>
+            <a href="https://discord.gg/RxK5Cvmv" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/discord.svg" alt="Discord logo">
+            </a>
+            <a href="https://reddit.com/r/decktricks" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/reddit.svg" alt="Reddit logo">
+            </a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Decktricks. All rights reserved.
+    </footer>
+</body>
+</html>
