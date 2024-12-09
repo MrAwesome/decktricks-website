@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decktricks</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('lol').textContent = window.devicePixelRatio;
+    });
+    </script>
     <style>
         * {
             -webkit-font-smoothing: antialiased;
@@ -19,19 +24,18 @@
             flex-direction: column;
             min-height: 100vh;
             align-items: center;
-            justify-content: center;
         }
         h1 {
             color: #ffffff;
-            font-size: 3.5em;
+            font-size: 8vmin;
             margin-bottom: 10px;
             margin-top: 0px;
             text-align: center;
         }
         .info-top {
-            font-size: 0.8em;
             text-align: center;
             padding-bottom: 15px;
+            font-size: 3.5vmin;
         }
         .download-button {
             display: inline-block;
@@ -67,7 +71,7 @@
         .step {
             border: 1px solid #292929;
             border-radius: 8px;
-            flex: 1 1 200px;
+            flex: 0 0 45%;
             text-align: center;
             padding-bottom: 5px;
         }
@@ -146,9 +150,11 @@
     </div>
     <hr class="divider-bottom" />
     <div class="info-bottom">
-        Decktricks is open-source software, released under the Apache License 2.0.<br />
-        For more information about Decktricks, check it out on GitHub:
+        Decktricks is open-source software, <br />
+        released under the Apache License 2.0.<br /> <br />
+        For more information, check out Decktricks on GitHub:
     </div>
+    <div id="lol">LOL</div>
     <footer>
         <a href="https://github.com/MrAwesome/decktricks">
             <img src="https://cdn.simpleicons.org/github/797979" alt="GitHub logo">
