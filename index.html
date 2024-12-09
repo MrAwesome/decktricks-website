@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decktricks</title>
     <style>
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -18,10 +23,15 @@
         }
         h1 {
             margin-top: 0px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-size: 4em;
             color: #ffffff;
             text-align: center;
+        }
+        .info-top {
+            font-size: 0.8em;
+            text-align: center;
+            padding-bottom: 15px;
         }
         .download-button {
             display: inline-block;
@@ -45,7 +55,7 @@
             gap: 20px;
             max-width: 800px;
             width: 90%;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
         .step1 {
             text-align: center;
@@ -73,22 +83,30 @@
             color: #cccccc;
             font-style: italic;
         }
+        .info-bottom {
+            font-size: 0.8em;
+            text-align: center;
+            padding-bottom: 8px;
+            font-style: italic;
+        }
+        .divider-bottom {
+            max-width: 900px;
+            min-width: 800px;
+        }
         footer {
             display: flex;
             gap: 20px;
             margin-bottom: 30px;
         }
         footer a img {
-            width: 40px;
-            height: 40px;
+            height: 50px;
             filter: grayscale(100%);
             transition: filter 0.3s;
         }
         footer a img:hover {
             filter: grayscale(0%);
         }
-        @media (max-width: 600px) {
-            .tutorial {
+        @media (max-width: 600px) { .tutorial {
                 flex-direction: column;
                 align-items: center;
             }
@@ -97,6 +115,10 @@
 </head>
 <body>
     <h1>Decktricks</h1>
+    <div class="info-top">A controller-friendly installer and launcher for Game Mode.<br />
+        Designed with love for Steam Deck and SteamOS.<br />
+        Free and open source, now and forever.
+    </div>
     <div class="step1">
         <a href="https://github.com/MrAwesome/decktricks/releases/download/stable/decktricks-install.desktop" class="download-button">Download</a>
         <div class="step-label">Step 1: Click!</div>
@@ -119,15 +141,20 @@
             <div class="step-label">Step 5: Click "Continue"</div>
         </div>
     </div>
+    <hr class="divider-bottom" />
+    <div class="info-bottom">
+        Decktricks is open-source software, released under the Apache License 2.0.<br />
+        For more information about Decktricks, check it out on GitHub:
+    </div>
     <footer>
         <a href="https://github.com/MrAwesome/decktricks">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" alt="GitHub logo">
+            <img src="https://cdn.simpleicons.org/github/797979" alt="GitHub logo">
         </a>
         <a href="https://reddit.com/r/decktricks">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/reddit.svg" alt="Reddit logo">
+            <img src="https://cdn.simpleicons.org/reddit/797979" alt="Reddit logo">
         </a>
         <a href="https://discord.gg/RxK5Cvmv">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/discord.svg" alt="Discord logo">
+            <img src="https://cdn.simpleicons.org/discord/797979" alt="Discord logo">
         </a>
     </footer>
 </body>
