@@ -252,6 +252,7 @@ h1 {
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
+    margin: 0 auto;
 }
 
 .program-description h2 {
@@ -259,11 +260,11 @@ h1 {
 }
 
 .program-description p {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .list-item {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .list-item::before {
