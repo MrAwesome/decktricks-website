@@ -221,18 +221,15 @@ h1 {
 }
 .decktricks-links a img {
     height: 50px;
-    filter: url(#grayFilter);
-    transition: filter 0.3s;
 }
 .decktricks-links a img:hover {
-    filter: none;
 }
 .info-bottom {
     font-size: 0.8em;
     text-align: center;
     font-style: italic;
     color: #aaaaaa;
-    padding-top: 3px;
+    padding-top: 5px;
     padding-bottom: 2px;
 }
 
