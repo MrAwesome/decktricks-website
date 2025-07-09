@@ -12,126 +12,129 @@
             <a id="tab-home" class="active">Install</a>
             <a id="tab-about">About</a>
         </nav>
-        <div id="home-page">
-            <div class="title">
-                <h1>Decktricks</h1>
-            </div>
-            <div class="info-top">
-                A controller-friendly installer and launcher for Game Mode.<br />
-                Designed with love for Steam Deck and SteamOS.<br />
-                Free and open source, now and forever.
-            </div>
-
-            <a class="download-button" href="https://github.com/MrAwesome/decktricks/releases/download/stable/decktricks-install.desktop">Download</a>
-
-            <details class="step-by-step width-auto">
-                <summary>How to install (animated)</summary>
-                <video autoplay muted loop playsinline class="install-video step">
-                    <source src="decktricks_install_final_shrunk.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </details>
-
-            <br />
-            <details class="step-by-step">
-                <summary>How to install (step-by-step instructions)</summary>
-                <div class="tutorial">
-                    <div class="tutorial-step">
-                        <div class="step-label">Step 2: Open the Downloads folder</div>
-                        <img src="step2.png" alt="Step 2">
-                    </div>
-                    <div class="tutorial-step">
-                        <div class="step-label">Step 3: Double-click the installer</div>
-                        <img src="step3.png" alt="Step 3">
-                    </div>
-                    <div class="tutorial-step">
-                        <div class="step-label">Step 4: Click "Execute"</div>
-                        <img src="step4.png" alt="Step 4">
-                    </div>
-                    <div class="tutorial-step">
-                        <div class="step-label">Step 5: Click "Continue"</div>
-                        <img src="step5.png" alt="Step 5">
-                    </div>
+        <main>
+            <div id="home-page">
+                <div class="title">
+                    <h1>Decktricks</h1>
                 </div>
-            </details>
-        </div>
-        <div id="about-page" style="display:none;">
-            <div class="about-page-contents width-auto">
+                <div class="info-top">
+                    A controller-friendly installer and launcher for Game Mode.<br />
+                    Designed with love for Steam Deck and SteamOS.<br />
+                    Free and open source, now and forever.
+                </div>
 
-                <div class="growable-video video-shrunk">
-                    <div class="shrunken-video-text">Decktricks<br />In Action</div>
-                    <video autoplay muted loop playsinline class="usage-video">
-                        <source src="decktricks_usage_final_shrunk.mp4" type="video/mp4">
+                <a class="download-button" href="https://github.com/MrAwesome/decktricks/releases/download/stable/decktricks-install.desktop">Download</a>
+
+                <details class="step-by-step width-auto" id="how-to-install">
+                    <summary>How to install (animated)</summary>
+                    <video autoplay muted loop playsinline class="install-video step">
+                        <source src="decktricks_install_final_shrunk.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                </div>
-            </div>
-
-
-            <div class="program-description width-auto">
-                <h2>What is Decktricks?</h2>
-                <p>Decktricks is the best way to install 3rd-party software (like Decky, Discord, and Moonlight) from Game Mode on your Steam Deck.</p>
-
-                <h2>What's special about Decktricks?</h2>
-                <p>Designed entirely with controller use in mind. You can run complicated installers with just one button press - no keyboard, mouse, or touchscreen required.</p>
-
-                <p>Requires zero setup. Just run the installer and you're ready to go.</p>
-
-                <p>Updates itself, so you only need to install it once and you don't ever have to think about it again.</p>
-
-                <p>100% free and open-source.</p>
-
-                <details>
-                    <summary>(Technical Facts)</summary>
-
-                    <p>Open-source software, released under the <a href="/LICENSE" target="_blank" rel="noopener noreferrer">Apache License 2.0.</a></p>
-
-                    <p>Written almost entirely in Rust, thanks to the wonderful <a href="https://github.com/godot-rust/gdext" target="_blank" rel="noopener noreferrer">godot-rust</a> project.</p>
-
-                    <p>Written with extensibility in mind, with the ability to write custom modules for any arbitrary installation logic.</p>
-
-                    <p>Completely GUI-independent CLI (and API), so all of the core functionality can be scripted or used in other projects.</p>
-
-                    <p>Well-tested codebase, with robust and flexible CI and end-to-end testing setup.</p>
-
-                    <p>Written by a former Big Tech SRE who has been gaming on Arch Linux since 2007.</p>
                 </details>
 
-                <h2>No More Desktop Mode</h2>
-                <p>For many users, installing Decktricks should be the last time you ever need to load into Desktop Mode. The most popular third-party programs are included by default, and Decktricks makes it easy to install/launch Nested Desktop Mode, which is much faster than the stock method.</p>
-
-                <h2 class="list-header">Featured Programs</h2>
-                <div class="programs-list">
-                    <div class="list-item">Chiaki</div>
-                    <div class="list-item">Decky</div>
-                    <div class="list-item">Discord</div>
-                    <div class="list-item">Heroic</div>
-                    <div class="list-item">Lutris</div>
-                    <div class="list-item">Moonlight</div>
-                    <div class="list-item">Nested Desktop Mode</div>
-                    <div class="list-item">ProtonUp-QT</div>
-                    <div class="list-item">RetroDeck</div>
-                    <div class="list-item">Spotify</div>
-                    <div class="list-item">...and many more!</div>
-                </div>
-                <p>If you have ideas for new programs to be added to Decktricks, (or you find a bug!) please make an issue here: <a href="https://github.com/MrAwesome/decktricks/issues" target="_blank" rel="noopener noreferrer">Issues</a></p>
+                <br />
+                <details class="step-by-step">
+                    <summary>How to install (step-by-step instructions)</summary>
+                    <div class="tutorial">
+                        <div class="tutorial-step">
+                            <div class="step-label">1. Open the Downloads folder</div>
+                            <img src="step2.png" alt="Step 2">
+                        </div>
+                        <div class="tutorial-step">
+                            <div class="step-label">2. Double-click the installer</div>
+                            <img src="step3.png" alt="Step 3">
+                        </div>
+                        <div class="tutorial-step">
+                            <div class="step-label">3. Click "Execute"</div>
+                            <img src="step4.png" alt="Step 4">
+                        </div>
+                        <div class="tutorial-step">
+                            <div class="step-label">4. Click "Continue"</div>
+                            <img src="step5.png" alt="Step 5">
+                        </div>
+                    </div>
+                </details>
             </div>
-                <h2 style="margin-bottom: 0px;">Join us:</h2>
-        </div>
+            <div id="about-page" style="display:none;">
+                <div class="about-page-contents width-auto">
 
-        </div>
-        <footer>
+                    <div class="growable-video video-shrunk">
+                        <div class="shrunken-video-text">Decktricks<br />In Action</div>
+                        <video autoplay muted loop playsinline class="usage-video">
+                            <source src="decktricks_usage_final_shrunk.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+
+                <div class="program-description width-auto">
+                    <h2>What is Decktricks?</h2>
+                    <p>Decktricks is the best way to install 3rd-party software (like Decky, Discord, and Moonlight) in Game Mode on your Steam Deck.</p>
+
+                    <h2>What's special about Decktricks?</h2>
+                    <p>Designed entirely with controller use in mind. You can run complicated installers with just one button press - no keyboard, mouse, or touchscreen required.</p>
+
+                    <p>Requires zero setup. Just run the installer and you're ready to go.</p>
+
+                    <p>Updates itself, so you only need to install it once and you don't ever have to think about it again.</p>
+
+                    <p>100% free / open-source.</p>
+
+                    <details>
+                        <summary>(Technical Facts)</summary>
+
+                        <p>Open-source software, released under the <a href="/LICENSE" target="_blank" rel="noopener noreferrer">Apache License 2.0.</a></p>
+
+                        <p>Written almost entirely in Rust, thanks to the wonderful <a href="https://github.com/godot-rust/gdext" target="_blank" rel="noopener noreferrer">godot-rust</a> project.</p>
+
+                        <p>Written with extensibility in mind, with the ability to write custom modules for any arbitrary installation logic.</p>
+
+                        <p>Completely GUI-independent CLI (and API), so all of the core functionality can be scripted or used in other projects.</p>
+
+                        <p>Well-tested codebase, with robust and flexible CI and end-to-end testing setup.</p>
+
+                        <p>Written by a former Big Tech SRE who has been gaming on Arch Linux since 2007.</p>
+                    </details>
+
+                    <h2>No More Desktop Mode</h2>
+                    <p>For many users, installing Decktricks should be the last time you ever need to load into Desktop Mode. The most popular third-party programs are included by default, and Decktricks makes it easy to use Nested Desktop Mode, which is much faster than the stock method.</p>
+
+                    <h2 class="list-header">Featured Programs</h2>
+                    <div class="programs-list">
+                        <div class="list-item">Chiaki</div>
+                        <div class="list-item">Decky</div>
+                        <div class="list-item">Discord</div>
+                        <div class="list-item">Heroic</div>
+                        <div class="list-item">Lutris</div>
+                        <div class="list-item">Moonlight</div>
+                        <div class="list-item">Nested Desktop Mode</div>
+                        <div class="list-item">ProtonUp-QT</div>
+                        <div class="list-item">ProtonPlus</div>
+                        <div class="list-item">RetroDeck</div>
+                        <div class="list-item">Spotify</div>
+                        <div class="list-item">...and many more!</div>
+                    </div>
+                    <p>If you have ideas for new programs to be added to Decktricks, (or you find a bug!) please make an issue here: <a href="https://github.com/MrAwesome/decktricks/issues" target="_blank" rel="noopener noreferrer">Issues</a></p>
+                </div>
+            </div>
+
+            </div>
+            <!--<h2 style="margin-bottom: 0px;">Join us!</h2>-->
             <div class="decktricks-links">
+                <a href="https://discord.gg/YGnCvvk3mm" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/discord" alt="Discord logo">
+                </a>
                 <a href="https://github.com/MrAwesome/decktricks" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub logo">
                 </a>
                 <a href="https://reddit.com/r/decktricks" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.simpleicons.org/reddit" alt="Reddit logo">
                 </a>
-                <a href="https://discord.gg/RxK5Cvmv" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.simpleicons.org/discord" alt="Discord logo">
-                </a>
             </div>
+        </main>
+        <footer>
             <div class="info-bottom">
                 © 2025 Decktricks. All rights reserved. All trademarks property of their respective owners in the U.S. and other countries. Decktricks is not affiliated with Valve Corporation. Steam, SteamOS, the Steam logo, Steam Deck, and the Steam Deck logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.
             </div>
@@ -171,17 +174,29 @@
             }
 
             const shrunkVideos = document.getElementsByClassName('growable-video');
-            for (const video of shrunkVideos) {
-                video.addEventListener('click', function () {
-                    if (video.classList.contains('video-shrunk')) {
-                        video.classList.remove('video-shrunk');
-                        video.classList.add('video-expanded');
+            for (const videoContainer of shrunkVideos) {
+                videoContainer.addEventListener('click', function () {
+                    if (videoContainer.classList.contains('video-shrunk')) {
+                        videoContainer.classList.remove('video-shrunk');
+                        videoContainer.classList.add('video-expanded');
+                        const video = videoContainer.getElementsByTagName('video')[0];
+                        video.currentTime = 0;
+                        //videoContainer.play();
                     } else {
-                        video.classList.remove('video-expanded');
-                        video.classList.add('video-shrunk');
+                        videoContainer.classList.remove('video-expanded');
+                        videoContainer.classList.add('video-shrunk');
                     }
                 });
             }
+
+
+            const howToInstall = document.getElementById('how-to-install');
+            howToInstall.addEventListener('toggle', function () {
+                if (howToInstall.open) {
+                    const video = howToInstall.getElementsByTagName('video')[0];
+                    video.currentTime = 0;
+                }
+            });
         </script>
     </body>
 </html>

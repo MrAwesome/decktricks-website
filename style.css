@@ -15,6 +15,9 @@ body {
     text-align: center;
     overflow-y: scroll;
 }
+main {
+    flex: 1;
+}
 nav {
     display: flex;
     justify-content: center;
@@ -61,7 +64,7 @@ h1 {
 }
 .info-top {
     text-align: center;
-    font-size: 3.5vmin;
+    font-size: 3vmin;
     margin-bottom: 15px;
 }
 
@@ -220,7 +223,7 @@ h1 {
     justify-content: center;
 }
 .decktricks-links a img {
-    height: 50px;
+    height: 60px;
 }
 .decktricks-links a img:hover {
 }
@@ -228,9 +231,11 @@ h1 {
     font-size: 0.8em;
     text-align: center;
     font-style: italic;
-    color: #aaaaaa;
+    color: #555555;
     padding-top: 5px;
     padding-bottom: 2px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .list-header {
